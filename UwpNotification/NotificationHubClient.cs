@@ -63,7 +63,7 @@ public class NotificationHubClient : INotificationHubClient
 
                 //send message and exit
                 if (!string.IsNullOrEmpty(_message))
-                {not
+                {
                     var topic = _message.Split(':')[0].ToLowerInvariant();
                     var message = _message.Split(':')[1];
 
